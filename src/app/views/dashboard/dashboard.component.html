@@ -1,0 +1,23 @@
+<div class="sm:flex sm:items-center sm:justify-between sm:pt-2">
+    <h1 class="text-2xl mb-2 sm:mb-0">
+        Dashboard
+    </h1>
+    <ft-button class="bg-primary text-white sm:block sm:w-40" (click)="todo()">Add+</ft-button>
+</div>
+<!--  w-24 block -->
+<div class="
+            w-full flex flex-col mt-2
+            sm:flex-row
+            ">
+    <ft-data-tile class="bg-primary" data="82.2 kg" [icon]="faWeightScale">Weight</ft-data-tile>
+    <ft-data-tile class="bg-green" data="34.20 kg (41.60%)" [icon]="faWeightHanging">Muscle</ft-data-tile>
+    <ft-data-tile class="bg-red" data="11.10 kg (13.50%)" [icon]="faCookie">Fat</ft-data-tile>
+</div>
+<div>
+    <form [formGroup]="exampleForm">
+        <ft-number-picker formControlName="weight" label="Weight"></ft-number-picker>
+    </form>
+    <div *ngIf="tmp$ | async as tmp">
+        {{tmp | json}}
+    </div>
+</div>

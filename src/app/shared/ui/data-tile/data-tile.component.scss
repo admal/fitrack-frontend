@@ -1,0 +1,11 @@
+:host {
+    @apply sm:w-1/3 sm:mx-2;
+
+    &:first-child {
+        @apply sm:ml-0;
+    }
+    
+    &:last-child {
+        @apply sm:mr-0;
+    }
+}
