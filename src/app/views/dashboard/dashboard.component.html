@@ -1,3 +1,21 @@
+<ft-modal id="testModal">
+    <div header>
+        <h3 class="text-lg font-medium leading-6 text-gray-900" id="modal-title">
+            Deactivate account
+        </h3>
+    </div>
+    <div content>
+        <p class="text-sm text-gray-500">Are you sure you want to deactivate your account? All of your data will be
+            permanently removed. This action cannot be undone.</p>
+    </div>
+    <div footer>
+        <div class="sm:flex sm:flex-row-reverse sm:px-6">
+            <ft-button class="bg-primary text-white ml-2 sm:w-24" (click)="save()">Save</ft-button>
+            <ft-button class="bg-white text-black sm:border sm:border-black sm:w-24" (click)="cancel()">Cancel</ft-button>
+        </div>
+    </div>
+</ft-modal>
+
 <div class="sm:flex sm:items-center sm:justify-between sm:pt-2">
     <h1 class="text-2xl mb-2 sm:mb-0">
         Dashboard

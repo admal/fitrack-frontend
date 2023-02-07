@@ -11,6 +11,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ButtonComponent } from './shared/ui/button/button.component';
 import { NumberPickerComponent } from './shared/ui/number-picker/number-picker.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ModalComponent } from './shared/ui/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     DashboardComponent,
     LoginComponent,
     ButtonComponent,
-    NumberPickerComponent
+    NumberPickerComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
