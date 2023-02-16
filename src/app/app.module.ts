@@ -12,6 +12,9 @@ import { ButtonComponent } from './shared/ui/button/button.component';
 import { NumberPickerComponent } from './shared/ui/number-picker/number-picker.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ModalComponent } from './shared/ui/modal/modal.component';
+import { CalendarComponent } from './views/calendar/calendar.component';
+import { CalendarTileComponent } from './views/calendar/calendar-tile/calendar-tile.component';
+import { CalendarHeaderTileComponent } from './views/calendar/calendar-header-tile/calendar-header-tile.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { ModalComponent } from './shared/ui/modal/modal.component';
     LoginComponent,
     ButtonComponent,
     NumberPickerComponent,
-    ModalComponent
+    ModalComponent,
+    CalendarComponent,
+    CalendarTileComponent,
+    CalendarHeaderTileComponent
   ],
   imports: [
     BrowserModule,
