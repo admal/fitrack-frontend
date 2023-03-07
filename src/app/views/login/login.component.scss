@@ -1,0 +1,6 @@
+.pattern-background {
+    background-color: #3F88C5;
+    opacity: 0.6;
+    background-image: radial-gradient(circle at center center, #eff1f3, #3F88C5), repeating-radial-gradient(circle at center center, #eff1f3, #eff1f3, 30px, transparent 60px, transparent 30px);
+    background-blend-mode: multiply;
+}

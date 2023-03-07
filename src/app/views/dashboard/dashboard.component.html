@@ -39,3 +39,5 @@
         {{tmp | json}}
     </div>
 </div>
+<h1>Notifications</h1>
+<div *ngIf="notifications$ | async as x">{{x.userName}}</div>
