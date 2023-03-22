@@ -15,6 +15,11 @@ import { ModalComponent } from './shared/ui/modal/modal.component';
 import { CalendarComponent } from './views/calendar/calendar.component';
 import { CalendarTileComponent } from './views/calendar/calendar-tile/calendar-tile.component';
 import { CalendarHeaderTileComponent } from './views/calendar/calendar-header-tile/calendar-header-tile.component';
+import { HttpClientModule } from '@angular/common/http';
+import { RegisterComponent } from './views/register/register.component';
+import { ValidationMessageComponent } from './shared/ui/form/validation-message/validation-message.component';
+import { ValidationGroupComponent } from './shared/ui/form/validation-group/validation-group.component';
+import { NotificationComponent } from './shared/notifications/notification/notification.component';
 
 @NgModule({
   declarations: [
@@ -28,10 +33,15 @@ import { CalendarHeaderTileComponent } from './views/calendar/calendar-header-ti
     ModalComponent,
     CalendarComponent,
     CalendarTileComponent,
-    CalendarHeaderTileComponent
+    CalendarHeaderTileComponent,
+    RegisterComponent,
+    ValidationMessageComponent,
+    ValidationGroupComponent,
+    NotificationComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FontAwesomeModule

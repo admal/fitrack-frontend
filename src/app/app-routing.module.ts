@@ -3,13 +3,17 @@ import { RouterModule, Routes } from '@angular/router';
 import { CalendarComponent } from './views/calendar/calendar.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { LoginComponent } from './views/login/login.component';
+import { RegisterComponent } from './views/register/register.component';
 
 const routes: Routes = [
   {
-    path: "dashboard", component: DashboardComponent
+    path: "login", component: LoginComponent
   },
   {
-    path: "login", component: LoginComponent
+    path: "register", component: RegisterComponent
+  },
+  {
+    path: "dashboard", component: DashboardComponent
   },
   {
     path: "calendar", component: CalendarComponent

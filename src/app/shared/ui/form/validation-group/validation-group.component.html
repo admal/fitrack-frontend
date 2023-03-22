@@ -1,0 +1,5 @@
+<div class="mb-4" *ngIf="!control.touched || !control?.errors">
+</div>
+<div class="h-4 flex items-start text-red text-xs" *ngIf="control.touched && control?.errors">
+    <ng-content></ng-content>
+</div>

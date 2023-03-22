@@ -1,11 +1,19 @@
-<div class="bg-white"> 
-  <!--  px-4 TODO: different login page then logged in -->
-  <router-outlet></router-outlet>
+<div [ngClass]="{dark: isDarkMode}">
+  <div class="bg-white dark:bg-black text-black dark:text-white">
+    <div class="absolute right-4 top-4">
+      <ft-notification class="block mb-2" *ngFor="let notification of notifications$ | async"
+        (onClose)="onNotificationClosed(notification.id)" [notification]="notification"></ft-notification>
+    </div>
+    <ft-button class="bg-white text-black" (click)="addTest()">Add notification</ft-button>
+    <ft-button class="dark:bg-black dark:text-white" (click)="changeMode()">Change mode</ft-button>
+    <!--  px-4 TODO: different login page then logged in -->
+    <router-outlet></router-outlet>
+  </div>
 </div>
-
+<!-- 
 <h1 class="text-3xl font-bold underline text-primary">
   Hello world!
 </h1>
 <p>
   Whereas recognition of the inherent dignity
-</p>
+</p> -->

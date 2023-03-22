@@ -1,0 +1,11 @@
+<div class="flex w-80 bg-primary text-white z-50 px-2 py-2">
+    <div class="mr-3 flex items-center justify-center" *ngIf="!notification.image">
+        <img class="rounded-full" src="https://avatars.slack-edge.com/2023-01-09/4626368895025_d9631d77edb9e493883b_512.jpg" width="50" height="50" alt="tmp" />
+        <!-- <img class="rounded-full" src="https://placehold.co/50" alt="tmp" /> -->
+    </div>
+    <div class="flex flex-col grow justify-center">
+        <div class="font-bold" *ngIf="notification.title">{{notification.title}} ({{notification.id}})</div>
+        <div class="" *ngIf="notification.content">{{notification.content}}</div>
+    </div>
+    <div class="mx-2 cursor-pointer" (click)="close()">X</div>
+</div>

@@ -1,16 +1,16 @@
 <ft-modal id="testModal">
     <div header>
-        <h3 class="text-lg font-medium leading-6 text-gray-900" id="modal-title">
+        <h3 class="text-lg font-medium leading-6 text-gray-900 dark:text-white" id="modal-title">
             Deactivate account
         </h3>
     </div>
     <div content>
-        <p class="text-sm text-gray-500">Are you sure you want to deactivate your account? All of your data will be
+        <p class="text-sm text-gray-500 dark:text-white">Are you sure you want to deactivate your account? All of your data will be
             permanently removed. This action cannot be undone.</p>
     </div>
     <div footer>
         <div class="sm:flex sm:flex-row-reverse sm:px-6">
-            <ft-button class="bg-primary text-white ml-2 sm:w-24" (click)="save()">Save</ft-button>
+            <ft-button class="bg-primary dark:bg-black text-white ml-2 sm:w-24" (click)="save()">Save</ft-button>
             <ft-button class="bg-white text-black sm:border sm:border-black sm:w-24" (click)="cancel()">Cancel</ft-button>
         </div>
     </div>
@@ -27,11 +27,11 @@
             w-full flex flex-col mt-2
             sm:flex-row
             ">
-    <ft-data-tile class="bg-primary" data="82.2 kg" [icon]="faWeightScale">Weight</ft-data-tile>
-    <ft-data-tile class="bg-green" data="34.20 kg (41.60%)" [icon]="faWeightHanging">Muscle</ft-data-tile>
-    <ft-data-tile class="bg-red" data="11.10 kg (13.50%)" [icon]="faCookie">Fat</ft-data-tile>
+    <ft-data-tile class="bg-primary dark:text-black" data="82.2 kg" [icon]="faWeightScale">Weight</ft-data-tile>
+    <ft-data-tile class="bg-green dark:text-black" data="34.20 kg (41.60%)" [icon]="faWeightHanging">Muscle</ft-data-tile>
+    <ft-data-tile class="bg-red dark:text-black" data="11.10 kg (13.50%)" [icon]="faCookie">Fat</ft-data-tile>
 </div>
-<div>
+<div class="mt-4">
     <form [formGroup]="exampleForm">
         <ft-number-picker formControlName="weight" label="Weight"></ft-number-picker>
     </form>
